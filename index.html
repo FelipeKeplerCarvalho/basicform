@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    background: linear-gradient(to right bottom, rgb(155, 240, 255), rgb(155, 54, 146));
+    height: 100vh;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 450px;
+    padding: 20px 30px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, .5);
+}
+
+.close {
+    text-align: right;
+    text-decoration: none;
+}
+.login{
+    text-align: center;
+    font-weight: bold;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+ 
+div {
+    display: flex;
+    flex-direction: column;
+}
+div > input {
+    padding: 10px;
+}
+.b {
+    margin-bottom: 20px;
+}
+
+.forgot {
+    margin-top: 5px;
+    text-decoration: none;
+}
+
+button{
+    margin-top: 40px;
+    background: linear-gradient(to right, rgb(155, 240, 255), rgb(155, 54, 146));
+    border-style: none;
+    padding: 15px;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+}
+.not-a-member{
+    text-align: center;
+    margin-top: 40px;
+    color: rgb(77, 77, 77);
+}
+
+</style>
+
+<body>
+
+    <form action="">
+          <a class="close" href="">X</a>
+            <h1 class="login">Login Form</h1>
+      
+        <div class="b">
+            <label for="">Email or Phone</label>
+            <input type="text">
+        </div>
+        <div >
+            <label for="">Password</label>
+            <input type="text">
+           
+        </div>
+
+            <a href="" class="forgot">Forgot Password</a>
+            <button>LOGIN</button>
+            <p class="not-a-member">Not a member <a href="">Singup Now</a> </p>
+           
+    </form>
+
+
+
+</body>
+
+</html>
